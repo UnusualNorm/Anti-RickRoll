@@ -2,7 +2,7 @@
 "update_url": "https://clients2.google.com/service/update2/crx",
 
   "name": "Rick Roll Detector",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "manifest_version": 2,
   "description": "Warns you about Rick Roll links - never get Rick Rolled again.",
   "homepage_url": "http://mike-griffiths.co.uk",
