@@ -15,6 +15,7 @@ chrome.extension.sendMessage({}, function(response) {
 				});
 				$('a[href*=' + links[i] + ']').append(' <div class="rickrollbox"><img src="' + chrome.extension.getURL('icons/rickastley.png') + '" width="24"></div>');
 				if (window.location.href.indexOf(links[i]) >= 0) {
+					
 					var r = confirm("You are being rick rolled, but there is hope! press OK to dodge the blow and be redirected.");
 					if (r == true) {
 						top.location.href = chrome.extension.getURL('icons/rickastley.png');
