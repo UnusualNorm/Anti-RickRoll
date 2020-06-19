@@ -5,7 +5,7 @@ chrome.extension.sendMessage({}, function(response) {
 
 			// ----------------------------------------------------------
 			// This part of the script triggers when page is done loading
-			console.log("Hello. This message was sent from scripts/inject.js");
+			console.log("All (known) rick-roll links have now been marked!");
 			// ----------------------------------------------------------
 
 			var links = ["dQw4w9WgXcQ", "42OleX0HR4E"];
