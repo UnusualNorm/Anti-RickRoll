@@ -2,12 +2,7 @@ chrome.extension.sendMessage({}, function(response) {
 	var readyStateCheckInterval = setInterval(function() {
 		if (document.readyState === "complete") {
 			clearInterval(readyStateCheckInterval);
-
-			// ----------------------------------------------------------
-			// This part of the script triggers when page is done loading
 			console.log("All (known) rick-roll links have now been marked!");
-			// ----------------------------------------------------------
-
 			var links = ["dQw4w9WgXcQ", "42OleX0HR4E"];
 			for (var i=0; i < links.length; i++) {
 				$(document).on('click', 'a[href*=' + links[i] + ']', function(e){
