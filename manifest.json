@@ -2,7 +2,7 @@
 "update_url": "https://clients2.google.com/service/update2/crx",
 
   "name": "RickGuard",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "manifest_version": 2,
   "description": "Hippity hoppity, rick roll links are now my property.",
   "homepage_url": "http://www.unusualnorm.com/",
