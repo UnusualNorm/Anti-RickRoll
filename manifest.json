@@ -1,7 +1,7 @@
 {
 "update_url": "https://clients2.google.com/service/update2/crx",
 
-  "name": "Rick Roll Identifier/Blocker",
+  "name": "RickGuard",
   "version": "0.1.6",
   "manifest_version": 2,
   "description": "Hippity hoppity, rick roll links are now my property.",
