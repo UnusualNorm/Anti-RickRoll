@@ -3,7 +3,17 @@ chrome.extension.sendMessage({}, function(response) {
 		if (document.readyState === "complete") {
 			clearInterval(readyStateCheckInterval);
 			console.log("All (known) rick-roll links have now been marked!");
-			var links = ["dQw4w9WgXcQ", "42OleX0HR4E"];
+			var links = [
+				"dQw4w9WgXcQ",
+				"42OleX0HR4E",
+				"okqEVeNqBhc",
+				"BROWqjuTM0g",
+				"IAISUDbjXj0",
+				"4zKshWnI3ok",
+				"oHg5SJYRHA0",
+				"6_b7RDuLwcI",
+				"DD70oKDlemE"
+			];
 			for (var i=0; i < links.length; i++) {
 				$(document).on('click', 'a[href*=' + links[i] + ']', function(e){
 					if (!confirm('Are you sure?  You are about to get Rick Rolled. :/')) e.preventDefault();
