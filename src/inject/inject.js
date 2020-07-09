@@ -12,17 +12,22 @@ chrome.extension.sendMessage({}, function(response) {
 				"4zKshWnI3ok",
 				"oHg5SJYRHA0",
 				"6_b7RDuLwcI",
-				"DD70oKDlemE"
+				"DD70oKDlemE",
+				"BjDebmqFRuc"
 			];
 			for (var i=0; i < links.length; i++) {
+				//Are you sure about that?
 				$(document).on('click', 'a[href*=' + links[i] + ']', function(e){
 					if (!confirm('Are you sure?  You are about to get Rick Rolled. :/')) e.preventDefault();
 				});
+				//show image
 				$('a[href*=' + links[i] + ']').append(' <div class="rickrollbox"><img src="' + chrome.extension.getURL('icons/rickastley.png') + '" width="24"></div>');
 				if (window.location.href.indexOf(links[i]) >= 0) {
+					//pause
 					if (window.location.href.indexOf("youtube") >= 0) {
 						$(".ytp-play-button").click();
 					}
+					//notify user
 					var r = confirm("You are being rick rolled, but there is hope! press OK to dodge the blow and be redirected.");
 					if (r == true) {
 						top.location.href = chrome.extension.getURL('icons/rickastley.png');
